@@ -1,0 +1,19 @@
+try {
+    var numero1 = parseFloat(prompt("Digite o primeiro número:"));
+    var numero2 = parseFloat(prompt("Digite o segundo número:"));
+  
+    if (isNaN(numero1) || isNaN(numero2)) {
+      throw new Error("Por favor, insira números válidos.");
+    }
+
+    var resultado = numero1 * numero2;
+  
+        console.log("O resultado da multiplicação é: " + resultado);
+  } catch (excecao) {
+    
+    console.error("Ocorreu um erro: " + excecao.message);
+  } finally {
+    
+    console.log("Operação concluída.");
+  }
+  
